@@ -1,9 +1,9 @@
-Font Awesome icon : <i class="fas fa-cart-plus"></i>
+☄ Font Awesome icon : <i class="fas fa-cart-plus"></i>
 
-Font Family : Bebas Neue , Roboto
+☄ Font Family : Bebas Neue , Roboto
 
 
-Custom Button code : 
+☄ Custom Button HTML code : 
 ========================================
 <a href="#" class="btn button">
       <i class="fas fa-cart-plus"></i>
