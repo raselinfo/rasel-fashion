@@ -1,241 +1,247 @@
 /* Babas Neue And Roboto Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap");
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    outline:none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
 }
-html{
-    font-size:62.5%;
-    scroll-behavior: smooth;
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 /* variables */
-:root{
-    /* Colors */
-    --primary:#FABE4C;
-    --secondary:#FFFBF0;
-    --button:linear-gradient(to bottom,#A4BC46,#85A019);
-    --dark:#363958;
-    --dark-light:#3E3E3E;
-    --light:#ffffff;
-    --light-gray:#F1F1F1;
-    /* Fonts */
-    --babas:'Bebas Neue', cursive;
-    --roboto:'Roboto', sans-serif;
+:root {
+  /* Colors */
+  --primary: #fabe4c;
+  --secondary: #fffbf0;
+  --button: linear-gradient(to bottom, #a4bc46, #85a019);
+  --dark: #363958;
+  --dark-light: #3e3e3e;
+  --light: #ffffff;
+  --light-gray: #f1f1f1;
+  /* Fonts */
+  --babas: "Bebas Neue", cursive;
+  --roboto: "Roboto", sans-serif;
 }
 
 /* Typography */
-h1,h2{
-    font-family:var(--babas);
-    font-weight:700;
-    color:var(--dark);
-    font-size:4.8rem;
+h1,
+h2 {
+  font-family: var(--babas);
+  font-weight: 700;
+  color: var(--dark);
+  font-size: 4.8rem;
 }
-h3,p,a{
-    font-family:var(--roboto);
+h3,
+p,
+a {
+  font-family: var(--roboto);
 }
-h3{
-    font-weight:700;
-    font-size:2.4rem;
-    color:var(--dark);
+h3 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: var(--dark);
 }
-p{
-    font-weight:400;
-    font-size:1.6rem;
-    line-height: 2.6rem;
-    color:var(--dark-light);
+p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: var(--dark-light);
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-img{
-    width:100%;
-    height:100%;
+img {
+  width: 100%;
+  height: 100%;
 }
 /* Custom Button */
-.button{
-    width:130px;
-    background:var(--button);
-    padding:1.2rem 1.5rem;
-    color:var(--light);
-    border:none;
-    display:inline-block;
-   transition:.2s;
-   border-radius:1rem;
-   font-size:1.6rem;
-   font-weight:500;
+.button {
+  width: 130px;
+  background: var(--button);
+  padding: 1.2rem 1.5rem;
+  color: var(--light);
+  border: none;
+  display: inline-block;
+  transition: 0.2s;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
 }
-.button:focus{
-     box-shadow: 0 0 0 0.3rem rgba(133, 160, 25, 0.163);
+.button:focus {
+  box-shadow: 0 0 0 0.3rem rgba(133, 160, 25, 0.163);
 }
-.button:hover{
-    color:var(--light);
-
+.button:hover {
+  color: var(--light);
 }
-
 
 /* header */
-#header{
-    background:url('../asset/images/bg.png'),linear-gradient(var(--secondary),var(--secondary));
-    height:100vh;
-    background-repeat:no-repeat;
-    background-position:29.1rem top,left top;
+#header {
+  background: url("../asset/images/bg.png"),
+    linear-gradient(var(--secondary), var(--secondary));
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: 29.1rem top, left top;
 }
-.navbar__main{
-    height:10rem;
+.navbar__bg {
+  background: var(--secondary);
+  box-shadow: 0px 2px 5px 0.25px #f7edd2;
 }
-.navbar__logo{
-    width:15rem;
+.navbar__main {
+  height: 10rem;
 }
-.navbar__item{
-    width:11rem;
-    transition:.5s;
+.navbar__logo {
+  width: 15rem;
 }
-.navbar__item:hover{
-     letter-spacing:2px;
+.navbar__item {
+  width: 11rem;
+  transition: 0.5s;
 }
-
-.navbar__link{
-    font-size:1.6rem;
-    font-weight:500;
-    color:var(--dark-light) !important;
-  
+.navbar__item:hover {
+  letter-spacing: 2px;
 }
 
+.navbar__link {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--dark-light) !important;
+}
 
 /* Hero Section */
-.hero__image{
-    width:44rem;
-    
+.hero {
+  margin-top: 10rem;
+}
+.hero__image {
+  width: 44rem;
 }
 
-.carousel__indicators__wrap{
-    top:110% !important;
+.carousel__indicators__wrap {
+  top: 132% !important;
 }
-.carousel__indicators__dotes{
-   
-    width:20px !important;
-    height:0px !important;
-     background:var(--primary) !important;
-    display:block;
-    border-radius:50%;
-    
+.carousel__indicators__dotes {
+  width: 20px !important;
+  height: 0px !important;
+  background: var(--primary) !important;
+  display: block;
+  border-radius: 50%;
 }
-.carousel__span{
-    color:var(--primary);
-    display:block;
+.carousel__span {
+  color: var(--primary);
+  display: block;
 }
-
 
 /* Woman Section */
 
-.manwoman__card{
-    width:36rem;
-    max-width:100%;
-    /* height:55rem; */
-    max-height:100%;
-    border:none;
-    background:var(--light);
-    box-shadow:0 0 1rem 1rem whitesmoke;
-    padding:1rem;
-    border-radius:1rem;
+.manwoman__card {
+  width: 36rem;
+  max-width: 100%;
+  /* height:55rem; */
+  max-height: 100%;
+  border: none;
+  background: var(--light);
+  box-shadow: 0 0 1rem 1rem whitesmoke;
+  padding: 1rem;
+  border-radius: 1rem;
 }
-.card__image{
-    width:33.3rem;
-    max-width:100%;
-   height:360px;
-    background:var(--light-gray);
-    padding:2rem;
-    border-radius:1rem;
-    margin:0 auto;
-}
-
-.card__title{
-    font-size:2.4rem;
-}
-.card__para{
-    font-size:1.6rem;
-    font-weight:400;
-    color:var(--dark-light);
-}
-.card__footer__price{
-    color:var(--primary);
-    font-size:3.6rem;
-    font-weight:700;
+.card__image {
+  width: 33.3rem;
+  max-width: 100%;
+  height: 360px;
+  background: var(--light-gray);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin: 0 auto;
 }
 
+.card__title {
+  font-size: 2.4rem;
+}
+.card__para {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--dark-light);
+}
+.card__footer__price {
+  color: var(--primary);
+  font-size: 3.6rem;
+  font-weight: 700;
+}
 
 /* Services */
-.services{
-    padding:10rem 0rem;
+.services {
+  padding: 10rem 0rem;
 }
 
-.services_flex__direction{
-    display:flex;
+.services_flex__direction {
+  display: flex;
 }
-.card__style{
-    display:flex;
-    background:var(--light);
-    box-shadow:0px 0px 10px 5px whitesmoke;
-    padding:2rem 1rem;
-    margin-bottom:2rem;
-    border-radius:1rem;
-    align-items:center;
-}
-
-.icon img{
-    width:80px;
+.card__style {
+  display: flex;
+  background: var(--light);
+  box-shadow: 0px 0px 10px 5px whitesmoke;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  align-items: center;
 }
 
-.services__image__wrapper img{
-    margin-left:2rem;
+.icon img {
+  width: 80px;
 }
 
+.services__image__wrapper img {
+  margin-left: 2rem;
+}
 
 /* Footer  */
 
-.footer__main{
-    background:#fa804c;
-    
-    
+.footer__main {
+  background: #183153;
 }
 
-.footer__card{
-    background:transparent;
-    box-shadow: 0px 0px 1rem .2rem #d45823;
-     width:300px;
+.footer__card {
+  background: transparent;
+  box-shadow: 0px 0px 1rem 0.2rem #284c80;
+  /* width:300px; */
+  margin: 1rem;
 }
-.footer__card h3{
-    color:var(--light);
-    font-size:2.7rem;
-    text-transform:uppercase;
-    margin-bottom:3rem;
-   
+.footer__card h3 {
+  color: var(--light);
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
 }
-.footer__card a{
-    font-size:1.6rem;
-    color:var(--light-gray);
-    margin-bottom:1rem;
+.footer__card a {
+  font-size: 1.6rem;
+  color: var(--light-gray);
+  margin-bottom: 1rem;
 }
-.footer__images{
-text-align:left;
+.footer__images {
+  text-align: left;
 }
-.footer__images img{
-    width:300px;
-    
+.footer__images img {
+  width: 300px;
 }
-.card__body{
-   
+
+.card__body i {
+  background: #fff;
+  color: var(--dark);
+  height: 40px;
+  width: 40px;
+  font-size: 2.4rem;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0.5rem;
+  cursor: pointer;
 }
-.card__body i{
-    background:#fff;
-    color:var(--dark);
-    height:40px;
-    width:40px;
-    font-size:2.4rem;
-   line-height:40px;
-   border-radius:50%;
-   margin:.5rem;                                  
+
+.foooter__bottom {
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  border-top: 2px solid #000;
+  font-size: 1.3rem;
 }
