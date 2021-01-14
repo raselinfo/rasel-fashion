@@ -15,11 +15,548 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
-    <!-- Custom Css -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="./css/responsive.css" />
   </head>
   <body>
     <!-- Start  -->
+    <!-- header Start -->
+    <header id="header" class="mb-5 pb-5">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-md navbar-light navbar__main">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              class="img-fluid navbar__logo"
+              src="./asset/logo/raselfashion.png"
+              alt=""
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mynavbar"
+          >
+            <span class="">
+              <img src="./asset/icon/hambarger.png" alt="" />
+            </span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse collapseable__navbar"
+            id="mynavbar"
+          >
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item navbar__item">
+                <a href="#" class="nav-link navbar__link">Home</a>
+              </li>
+              <li class="nav-item navbar__item">
+                <a href="#" class="nav-link navbar__link">Product</a>
+              </li>
+              <li class="nav-item navbar__item">
+                <a href="#" class="nav-link navbar__link">About us</a>
+              </li>
+              <li class="nav-item navbar__item">
+                <a href="#" class="nav-link navbar__link">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Hero Section Start -->
+      <section class="hero">
+        <div class="container">
+          <div
+            id="mycarousel"
+            class="carousel slide d-md-block d-none"
+            data-bs-ride="carousel"
+          >
+            <!-- Carousel Indicators -->
+            <ol class="carousel-indicators carousel__indicators__wrap">
+              <li
+                data-bs-target="#mycarousel"
+                data-bs-slide-to="0"
+                class="active carousel__indicators__dotes"
+              ></li>
+              <li
+                data-bs-target="#mycarousel"
+                data-bs-slide-to="1"
+                class="carousel__indicators__dotes"
+              ></li>
+              <li
+                data-bs-target="#mycarousel"
+                data-bs-slide-to="2"
+                class="carousel__indicators__dotes"
+              ></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div
+                  class="row d-flex align-items-center justify-content-around"
+                >
+                  <!-- left side -->
+                  <div class="col-sm-6">
+                    <h1>
+                      <span class="carousel__span">Be the fashioner</span> of
+                      Winter
+                    </h1>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing<br />
+                      and typesetting industry.
+                    </p>
+                    <a href="#" class="btn button">
+                      <i class="fas fa-cart-plus"></i>
+                      <span>Buy Now</span>
+                    </a>
+                  </div>
+                  <!-- Right Side -->
+                  <div class="col-sm-6">
+                    <img
+                      src="./asset/images/hero.png"
+                      alt=""
+                      class="img-fluid hero__image hero__image__gap"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="row d-flex align-items-center justify-content-around"
+                >
+                  <!-- Left Side -->
+                  <div class="col-sm-6">
+                    <img
+                      src="./asset/images/hero.png"
+                      alt=""
+                      class="img-fluid hero__image"
+                    />
+                  </div>
+                  <!-- Right side -->
+                  <div class="col-sm-6">
+                    <div class="hero__image__gap">
+                      <h1>
+                        <span class="carousel__span">Be the fashioner</span> of
+                        Winter
+                      </h1>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing<br />
+                        and typesetting industry.
+                      </p>
+                      <a href="#" class="btn button">
+                        <i class="fas fa-cart-plus"></i>
+                        <span>Buy Now</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="row d-flex align-items-center justify-content-around"
+                >
+                  <!-- left side -->
+                  <div class="col-sm-6">
+                    <h1>
+                      <span class="carousel__span">Be the fashioner</span> of
+                      Winter
+                    </h1>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing<br />
+                      and typesetting industry.
+                    </p>
+                    <a href="#" class="btn button">
+                      <i class="fas fa-cart-plus"></i>
+                      <span>Buy Now</span>
+                    </a>
+                  </div>
+                  <!-- Right Side -->
+                  <div class="col-sm-6">
+                    <img
+                      src="./asset/images/hero.png"
+                      alt=""
+                      class="img-fluid hero__image hero__image__gap"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Carousel Mobile Devices -->
+      <section class="pb-5 mb-5 carousel__mobile" style="overflow: hidden; background: #fffbf0">
+        <div class="row d-flex text-center d-md-none">
+          <!-- left side -->
+          <div class="col-sm-12 col-md-6 text-start p-5">
+            <h1>
+              <span class="carousel__span">Be the fashioner</span> of Winter
+            </h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing<br />
+              and typesetting industry.
+            </p>
+            <a href="#" class="btn button">
+              <i class="fas fa-cart-plus"></i>
+              <span>Buy Now</span>
+            </a>
+          </div>
+          <!-- Right Side -->
+          <div class="col-sm-12 col-md-6">
+            <img
+              src="./asset/images/hero.png"
+              alt=""
+              class="img-fluid hero__image"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Hero Section Ent -->
+    </header>
+    <!-- Header End -->
+
+    <main id="main">
+      <!-- Woman Section -->
+      <section class="woman my-5 py-5">
+        <div class="container">
+          <h2 class="mb-5 pb-3 text-center text-md-start">W0Man Jacket</h2>
+          <div class="row">
+            <!-- card 1 -->
+            <div class="col-md-12 col-lg-4">
+              <div class="card manwoman__card">
+                <div class="card__image">
+                  <img
+                    class="card-img-top"
+                    src="./asset/images/7.png"
+                    alt="Woman"
+                  />
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card__title">Yellow Coat Jacket</h3>
+                  <p class="card__para">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                </div>
+
+                <div
+                  class="card__footer d-flex align-items-center justify-content-between"
+                >
+                  <span class="card__footer__price">$234</span>
+                  <a href="#" class="btn button">
+                    <i class="fas fa-cart-plus"></i>
+                    <span>Buy Now</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="col-md-12 col-lg-4">
+              <div class="card manwoman__card">
+                <div class="card__image">
+                  <img
+                    class="card-img-top"
+                    src="./asset/images/6.png"
+                    alt="Woman"
+                  />
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card__title">Ladies Jacket</h3>
+                  <p class="card__para">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                </div>
+
+                <div
+                  class="card__footer d-flex align-items-center justify-content-between"
+                >
+                  <span class="card__footer__price">$234</span>
+                  <a href="#" class="btn button">
+                    <i class="fas fa-cart-plus"></i>
+                    <span>Buy Now</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="col-md-12 col-lg-4">
+              <div class="card manwoman__card">
+                <div class="card__image">
+                  <img
+                    class="card-img-top"
+                    src="./asset/images/5.png"
+                    alt="Woman"
+                  />
+                </div>
+                <div class="card-body">
+                  <h3 class="card__title">Woman Leather Jacket</h3>
+                  <p class="card__para">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                </div>
+
+                <div
+                  class="card__footer d-flex align-items-center justify-content-between"
+                >
+                  <span class="card__footer__price">$234</span>
+                  <a href="#" class="btn button">
+                    <i class="fas fa-cart-plus"></i>
+                    <span>Buy Now</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Woman Section End-->
+
+      <!-- Man Section Start -->
+      <section class="woman my-5 py-5">
+        <div class="container mt-5">
+          <h2 class="mb-5 pb-3 text-center text-md-start">Man Jacket</h2>
+          <div class="row d-flex justify-content-around">
+            <!-- card 1 -->
+            <div class="col-md-12 col-lg-4">
+              <div class="card manwoman__card">
+                <div class="card__image">
+                  <img
+                    class="card-img-top"
+                    src="./asset/images/1.png"
+                    alt="Woman"
+                  />
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card__title">Snowboard Jacket Mens</h3>
+                  <p class="card__para">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                </div>
+
+                <div
+                  class="card__footer d-flex align-items-center justify-content-between"
+                >
+                  <span class="card__footer__price">$234</span>
+                  <a href="#" class="btn button">
+                    <i class="fas fa-cart-plus"></i>
+                    <span>Buy Now</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="col-md-12 col-lg-4">
+              <div class="card manwoman__card">
+                <div class="card__image">
+                  <img
+                    class="card-img-top"
+                    src="./asset/images/9.png"
+                    alt="Woman"
+                  />
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card__title">Man Leather Jackets</h3>
+                  <p class="card__para">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                </div>
+
+                <div
+                  class="card__footer d-flex align-items-center justify-content-between"
+                >
+                  <span class="card__footer__price">$234</span>
+                  <a href="#" class="btn button">
+                    <i class="fas fa-cart-plus"></i>
+                    <span>Buy Now</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="col-md-12 col-lg-4">
+              <div class="card manwoman__card">
+                <div class="card__image">
+                  <img
+                    class="card-img-top"
+                    src="./asset/images/8.png"
+                    alt="Woman"
+                  />
+                </div>
+                <div class="card-body">
+                  <h3 class="card__title">Man Casual Jackets</h3>
+                  <p class="card__para">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                </div>
+
+                <div
+                  class="card__footer d-flex align-items-center justify-content-between"
+                >
+                  <span class="card__footer__price">$234</span>
+                  <a href="#" class="btn button">
+                    <i class="fas fa-cart-plus"></i>
+                    <span>Buy Now</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- Man Section End -->
+
+<!-- Our Services -->
+<section class="services">
+  <div class="container">
+    <div class="row services_flex__direction">
+      <div class="col-md-12 col-lg-5 services__card__wrapper">
+        <!-- card 1 -->
+        <div class="card__style">
+          <div class="icon me-5">
+            <img src="./asset/images/2.png" alt="icon">
+          </div>
+          <div class="icon__datail">
+            <h3 class="icon__datail__title">Find the Perfect Fit</h3>
+            <p class="icon__datail__para">Everybody is different, which is why we
+offer styles for every body.</p>
+          </div>
+        </div>
+
+         <!-- card 2 -->
+        <div class="card__style">
+          <div class="icon me-5">
+            <img src="./asset/images/2.png" alt="icon">
+          </div>
+          <div class="icon__datail">
+            <h3 class="icon__datail__title">Free Exchanges</h3>
+            <p class="icon__datail__para">Everybody is different, which is why we
+offer styles for every body.</p>
+          </div>
+        </div>
+
+         <!-- card 3 -->
+        <div class="card__style">
+          <div class="icon me-5">
+            <img src="./asset/images/2.png" alt="icon">
+          </div>
+          <div class="icon__datail">
+            <h3 class="icon__datail__title">Contact Our Seller</h3>
+            <p class="icon__datail__para">Everybody is different, which is why we
+offer styles for every body.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-lg-7 services__image__wrapper">
+        <img src="./asset/images/10.png" alt="services" class="img-fluid">
+      </div>
+     
+    </div>
+  </div>
+</section>
+
+    </main>
+
+
+    <!-- footer Section -->
+    <footer class="footer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#fa804c" fill-opacity="1" d="M0,128L24,117.3C48,107,96,85,144,112C192,139,240,213,288,208C336,203,384,117,432,96C480,75,528,117,576,122.7C624,128,672,96,720,80C768,64,816,64,864,64C912,64,960,64,1008,64C1056,64,1104,64,1152,69.3C1200,75,1248,85,1296,90.7C1344,96,1392,96,1416,96L1440,96L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path>
+</svg>
+
+
+<div class="footer__main">
+<div class="container footer__container">
+        <div class="row text-center">
+          <!-- left -->
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card footer__card p-5">
+                  <div class="card-body">
+                    <h3>Information</h3>
+                    <a  href="#" class="d-block ">FAQS</a>
+                    <a  href="#" class="d-block ">About us</a>
+                    <a  href="#" class="d-block ">RaselFashion legal</a>
+                    <a  href="#" class="d-block ">Privacy & Cookies</a>
+                    <a  href="#" class="d-block ">Sit Map</a>  
+                    <a  href="#" class="d-block ">Secure shopping</a>
+                  </div>
+                </div>              
+              </div>
+
+              <div class="col-lg-6">
+                <div class="card footer__card p-5">
+                  <div class="card-body">
+                    <h3>Terms And Condition</h3>
+                    <a  href="#" class="d-block ">Free Returns</a>
+                    <a  href="#" class="d-block ">30 Days Return Policy!</a>
+                    <a  href="#" class="d-block ">All Jacket in stock!</a>
+                    <a  href="#" class="d-block ">Secure shopping</a>
+                    <a  href="#" class="d-block ">Ethical Trading</a>   
+                  </div>
+                </div>             
+              </div>
+            </div>
+            <div class="row">
+              <div class="col footer__images">
+                <img class="img-fluid" src="./asset/images/payment.png" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- right -->
+          <div class="col-lg-4">
+            <div class="row">
+              <div class="col">
+                <div class="card footer__card p-5">
+                  <div class="card-body">
+                    <h3>Contact Details</h3>
+                    <a  href="#" class="d-block ">RaselFashion</a>
+                    <a  href="#" class="d-block ">Number : 01840146975</a>
+                    <a  href="#" class="d-block ">Head Office : Chandpur Tower</a>
+                    <a  href="#" class="d-block ">Email : example@gmail.com</a>
+                    <a  href="#" class="d-block ">Web : www.raselofficial.com</a>   
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- social -->
+            <div class="row">
+              <div class=" p-5">
+                  <div class="card-body card__body  d-flex align-items-center">
+                     <h3 class="text-light">Follow Us : </h3>
+                    <div>
+                       <i class="fab fa-facebook-f"></i>
+                     <i class="fab fa-facebook-f"></i>
+                     <i class="fab fa-facebook-f"></i>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+      
+    </footer>
 
     <!-- End -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
