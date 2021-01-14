@@ -81,7 +81,7 @@ img {
 #header {
   background: url("../asset/images/bg.png"),
     linear-gradient(var(--secondary), var(--secondary));
-  height: 100vh;
+  height: 80vh;
   background-repeat: no-repeat;
   background-position: 29.1rem top, left top;
 }
